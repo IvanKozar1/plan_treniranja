@@ -1,5 +1,4 @@
 const renderNewExcerciseElement1 = (excerciseType) => {
-    if (excerciseType !== '') {
       const newExcerciseElement = document.createElement('li');
       const newButtonElement = document.createElement('button');
       const newOrderedList = document.createElement('ol');
@@ -15,11 +14,10 @@ const renderNewExcerciseElement1 = (excerciseType) => {
       listRoot.append(newOrderedList);
       newOrderedList.append(newExcerciseElement);
       newOrderedList.append(newButtonElement);
-    }
+
   };
   
   const renderNewExcerciseElement2 = (excerciseType) => {
-    if (excerciseType !== '') {
       const newExcerciseElement = document.createElement('li');
       const newButtonElement = document.createElement('button');
       const newOrderedList = document.createElement('ol');
@@ -35,11 +33,9 @@ const renderNewExcerciseElement1 = (excerciseType) => {
       listRoot.append(newOrderedList);
       newOrderedList.append(newExcerciseElement);
       newOrderedList.append(newButtonElement);
-    }
   };
 
   const renderNewExcerciseElement3 = (excerciseType) => {
-    if (excerciseType !== '') {
       const newExcerciseElement = document.createElement('li');
       const newButtonElement = document.createElement('button');
       const newOrderedList = document.createElement('ol');
@@ -55,11 +51,9 @@ const renderNewExcerciseElement1 = (excerciseType) => {
       listRoot.append(newOrderedList);
       newOrderedList.append(newExcerciseElement);
       newOrderedList.append(newButtonElement);
-    }
   };
 
   const renderNewExcerciseElement4 = (excerciseType) => {
-    if (excerciseType !== '') {
       const newExcerciseElement = document.createElement('li');
       const newButtonElement = document.createElement('button');
       const newOrderedList = document.createElement('ol');
@@ -75,11 +69,9 @@ const renderNewExcerciseElement1 = (excerciseType) => {
       listRoot.append(newOrderedList);
       newOrderedList.append(newExcerciseElement);
       newOrderedList.append(newButtonElement);
-    }
   };
 
   const renderNewExcerciseElement5 = (excerciseType) => {
-    if (excerciseType !== '') {
       const newExcerciseElement = document.createElement('li');
       const newButtonElement = document.createElement('button');
       const newOrderedList = document.createElement('ol');
@@ -95,11 +87,9 @@ const renderNewExcerciseElement1 = (excerciseType) => {
       listRoot.append(newOrderedList);
       newOrderedList.append(newExcerciseElement);
       newOrderedList.append(newButtonElement);
-    }
   };
 
   const renderNewExcerciseElement6 = (excerciseType) => {
-    if (excerciseType !== '') {
       const newExcerciseElement = document.createElement('li');
       const newButtonElement = document.createElement('button');
       const newOrderedList = document.createElement('ol');
@@ -115,5 +105,4 @@ const renderNewExcerciseElement1 = (excerciseType) => {
       listRoot.append(newOrderedList);
       newOrderedList.append(newExcerciseElement);
       newOrderedList.append(newButtonElement);
-    }
   };
