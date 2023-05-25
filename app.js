@@ -59,24 +59,24 @@ const addExcerciseHandler = () => {
 
   if (excerciseType !== '' && activeDay === 'btn1') {
     excercisesDayOne.push(newExcercise.excercise);
-    renderNewExcerciseElement(newExcercise.excercise, 'monday', '1');
+    renderNewExcerciseElement(newExcercise.excercise, 'monday', '1',excercisesDayOne);
   } else if (excerciseType !== '' && activeDay === 'btn2') {
     excercisesDayTwo.push(newExcercise.excercise);
-    renderNewExcerciseElement(newExcercise.excercise, 'tuesday', '2');
+    renderNewExcerciseElement(newExcercise.excercise, 'tuesday', '2',excercisesDayTwo);
   } else if (excerciseType !== '' && activeDay === 'btn3') {
     excercisesDayThree.push(newExcercise.excercise);
-    renderNewExcerciseElement(newExcercise.excercise, 'wednesday', '3');
+    renderNewExcerciseElement(newExcercise.excercise, 'wednesday', '3',excercisesDayThree);
   } else if (excerciseType !== '' && activeDay === 'btn4') {
     excercisesDayFour.push(newExcercise.excercise);
-    renderNewExcerciseElement(newExcercise.excercise, 'thursday', '4');
+    renderNewExcerciseElement(newExcercise.excercise, 'thursday', '4',excercisesDayFour);
   } else if (excerciseType !== '' && activeDay === 'btn5') {
     excercisesDayFive.push(newExcercise.excercise);
-    renderNewExcerciseElement(newExcercise.excercise, 'friday', '5');
+    renderNewExcerciseElement(newExcercise.excercise, 'friday', '5',excercisesDayFive);
   } else if (excerciseType !== '' && activeDay === 'btn6') {
     excercisesDaySix.push(newExcercise.excercise);
-    renderNewExcerciseElement(newExcercise.excercise, 'saturday', '6');
+    renderNewExcerciseElement(newExcercise.excercise, 'saturday', '6',excercisesDaySix);
   } else {
-    return console.error('Error');
+    return alert('Error');
   }
 
   activeDay = null;
