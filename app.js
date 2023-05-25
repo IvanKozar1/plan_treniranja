@@ -59,22 +59,22 @@ const addExcerciseHandler = () => {
 
   if (excerciseType !== '' && activeDay === 'btn1') {
     excercisesDayOne.push(newExcercise.excercise);
-    renderNewExcerciseElement1(newExcercise.excercise);
+    renderNewExcerciseElement(newExcercise.excercise, 'monday', '1');
   } else if (excerciseType !== '' && activeDay === 'btn2') {
     excercisesDayTwo.push(newExcercise.excercise);
-    renderNewExcerciseElement2(newExcercise.excercise);
+    renderNewExcerciseElement(newExcercise.excercise, 'tuesday', '2');
   } else if (excerciseType !== '' && activeDay === 'btn3') {
     excercisesDayThree.push(newExcercise.excercise);
-    renderNewExcerciseElement3(newExcercise.excercise);
+    renderNewExcerciseElement(newExcercise.excercise, 'wednesday', '3');
   } else if (excerciseType !== '' && activeDay === 'btn4') {
     excercisesDayFour.push(newExcercise.excercise);
-    renderNewExcerciseElement4(newExcercise.excercise);
+    renderNewExcerciseElement(newExcercise.excercise, 'thursday', '4');
   } else if (excerciseType !== '' && activeDay === 'btn5') {
     excercisesDayFive.push(newExcercise.excercise);
-    renderNewExcerciseElement5(newExcercise.excercise);
+    renderNewExcerciseElement(newExcercise.excercise, 'friday', '5');
   } else if (excerciseType !== '' && activeDay === 'btn6') {
     excercisesDaySix.push(newExcercise.excercise);
-    renderNewExcerciseElement6(newExcercise.excercise);
+    renderNewExcerciseElement(newExcercise.excercise, 'saturday', '6');
   } else {
     return console.error('Error');
   }
