@@ -7,20 +7,21 @@
     <title>Training plan</title>
     <link rel="stylesheet" href="/styles/add-style.css" />
     <link rel="stylesheet" href="/styles/style.css" />
+    <script src="dayRenderer.js" defer></script>
     <script src="app.js" defer></script>
   </head>
   <body>
     <div id="backdrop"></div>
     <div class="modal" id="add-modal">
-        <div class="modal__content">
-          <label for="title">Add an excercise</label>
-          <input type="text" name="title" id="title" />
-        </div>
-        <div class="modal__actions">
-          <button class="btn btn--passive">Cancel</button>
-          <button class="btn btn--success">Add</button>
-        </div>
+      <div class="modal__content">
+        <label for="title">Add an excercise</label>
+        <input type="text" name="title" id="title" />
       </div>
+      <div class="modal__actions">
+        <button class="btn btn--passive">Cancel</button>
+        <button class="btn btn--success">Add</button>
+      </div>
+    </div>
 
     <header>
       <h1>Weekly Workout Schedule</h1>
@@ -35,9 +36,7 @@
             </div>
           </div>
         </div>
-        <ul id="excercise-list1">
-        
-        </ul>
+        <ul id="excercise-list1"></ul>
       </div>
       <div>
         <div class="day-container">
@@ -49,8 +48,8 @@
               </div>
             </div>
           </div>
+          <ul id="excercise-list2"></ul>
         </div>
-        <ul id="excercise-list2"></ul>
       </div>
       <div>
         <div class="day-container">
@@ -61,10 +60,9 @@
                 <button class="add-btn" id="btn3">Add</button>
               </div>
             </div>
-
           </div>
+          <ul id="excercise-list3"></ul>
         </div>
-        <ul class="excercise-list3"></ul>
       </div>
       <div>
         <div class="day-container">
@@ -75,10 +73,9 @@
                 <button class="add-btn" id="btn4">Add</button>
               </div>
             </div>
-
           </div>
+          <ul id="excercise-list4"></ul>
         </div>
-        <ul id="excercise-list4"></ul>
       </div>
       <div>
         <div class="day-container">
@@ -89,10 +86,9 @@
                 <button class="add-btn" id="btn5">Add</button>
               </div>
             </div>
-
           </div>
+          <ul id="excercise-list5"></ul>
         </div>
-        <ul id="excercise-list5"></ul>
       </div>
       <div>
         <div class="day-container">
@@ -103,10 +99,9 @@
                 <button class="add-btn" id="btn6">Add</button>
               </div>
             </div>
-
           </div>
+          <ul id="excercise-list6"></ul>
         </div>
-        <ul id="excercise-list6"></ul>
       </div>
       <div class="day-container">
         <div>

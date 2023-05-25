@@ -25,7 +25,12 @@ const toggleBackdrop = () => {
   backdrop.classList.toggle('visible');
 };
 
-const toggleExcerciseModal = () => {
+let activeDay;
+const toggleExcerciseModal = (event) => {
+  if (event) {
+    activeDay = event.target.id;
+  }
+
   addExcerciseModal.classList.toggle('visible');
   toggleBackdrop();
 };
@@ -39,25 +44,7 @@ const cancelExcerciseHandler = () => {
   clearExcerciseInput();
 };
 
-const renderNewExcerciseElement = (excerciseType) => {
-  if (excerciseType !== '') {
-    const newExcerciseElement = document.createElement('li');
-    const newButtonElement = document.createElement('button');
-    const newOrderedList = document.createElement('ol');
 
-    newButtonElement.innerHTML = 'Delete';
-    newOrderedList.id = `${excercisesDayOne.indexOf(excerciseType)}`;
-    newExcerciseElement.innerHTML = `- ${excerciseType}`;
-    const listRoot = document.getElementById('excercise-list1');
-    newOrderedList.className = 'excercise-element';
-
-    newButtonElement.className = `${excercisesDayOne.indexOf(excerciseType)}`;
-    newButtonElement.addEventListener('click', deleteExcerciseButton);
-    listRoot.append(newOrderedList);
-    newOrderedList.append(newExcerciseElement);
-    newOrderedList.append(newButtonElement);
-  }
-};
 
 const addExcerciseHandler = () => {
   const excerciseType = userInput.value;
@@ -70,12 +57,31 @@ const addExcerciseHandler = () => {
     excercise: excerciseType,
   };
 
-  if (excerciseType !== '') {
+  if (excerciseType !== '' && activeDay === 'btn1') {
     excercisesDayOne.push(newExcercise.excercise);
+    renderNewExcerciseElement1(newExcercise.excercise);
+  } else if (excerciseType !== '' && activeDay === 'btn2') {
+    excercisesDayTwo.push(newExcercise.excercise);
+    renderNewExcerciseElement2(newExcercise.excercise);
+  } else if (excerciseType !== '' && activeDay === 'btn3') {
+    excercisesDayThree.push(newExcercise.excercise);
+    renderNewExcerciseElement3(newExcercise.excercise);
+  } else if (excerciseType !== '' && activeDay === 'btn4') {
+    excercisesDayFour.push(newExcercise.excercise);
+    renderNewExcerciseElement4(newExcercise.excercise);
+  } else if (excerciseType !== '' && activeDay === 'btn5') {
+    excercisesDayFive.push(newExcercise.excercise);
+    renderNewExcerciseElement5(newExcercise.excercise);
+  } else if (excerciseType !== '' && activeDay === 'btn6') {
+    excercisesDaySix.push(newExcercise.excercise);
+    renderNewExcerciseElement6(newExcercise.excercise);
+  } else {
+    return console.error('Error');
   }
+
+  activeDay = null;
   toggleExcerciseModal();
   clearExcerciseInput();
-  renderNewExcerciseElement(newExcercise.excercise);
 };
 
 const backdropClickHandler = () => {
@@ -101,3 +107,7 @@ addBtn.addEventListener('click', addingOnRightDay);
 
 dayOneBtn.addEventListener('click', toggleExcerciseModal);
 dayTwoBtn.addEventListener('click', toggleExcerciseModal);
+dayThreeBtn.addEventListener('click', toggleExcerciseModal)
+dayFourBtn.addEventListener('click', toggleExcerciseModal)
+dayFiveBtn.addEventListener('click', toggleExcerciseModal)
+daySixBtn.addEventListener('click', toggleExcerciseModal)
