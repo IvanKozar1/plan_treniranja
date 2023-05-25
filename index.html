@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Training plan</title>
+    <link rel="stylesheet" href="/styles/add-style.css" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div id="backdrop"></div>
+    <div class="modal" id="add-modal">
+        <div class="modal__content">
+          <label for="title">Add an excercise</label>
+          <input type="text" name="title" id="title" />
+        </div>
+        <div class="modal__actions">
+          <button class="btn btn--passive">Cancel</button>
+          <button class="btn btn--success">Add</button>
+        </div>
+      </div>
+
+    <header>
+      <h1>Weekly Workout Schedule</h1>
+    </header>
+    <main id="main-container">
+      <div class="day-container">
+        <div>
+          <div class="anyday" id="day1">
+            <p>Monday</p>
+            <div class="btns">
+              <button class="add-btn" id="btn1">Add</button>
+            </div>
+          </div>
+        </div>
+        <ul id="excercise-list1">
+        
+        </ul>
+      </div>
+      <div>
+        <div class="day-container">
+          <div>
+            <div class="anyday" id="day2">
+              <p>Thuesday</p>
+              <div class="btns">
+                <button class="add-btn" id="btn2">Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul id="excercise-list2"></ul>
+      </div>
+      <div>
+        <div class="day-container">
+          <div>
+            <div class="anyday" id="day3">
+              <p>Wednesday</p>
+              <div class="btns">
+                <button class="add-btn" id="btn3">Add</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <ul class="excercise-list3"></ul>
+      </div>
+      <div>
+        <div class="day-container">
+          <div>
+            <div class="anyday" id="day4">
+              <p>Thursday</p>
+              <div class="btns">
+                <button class="add-btn" id="btn4">Add</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <ul id="excercise-list4"></ul>
+      </div>
+      <div>
+        <div class="day-container">
+          <div>
+            <div class="anyday" id="day5">
+              <p>Friday</p>
+              <div class="btns">
+                <button class="add-btn" id="btn5">Add</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <ul id="excercise-list5"></ul>
+      </div>
+      <div>
+        <div class="day-container">
+          <div>
+            <div class="anyday" id="day6">
+              <p>Saturday</p>
+              <div class="btns">
+                <button class="add-btn" id="btn6">Add</button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <ul id="excercise-list6"></ul>
+      </div>
+      <div class="day-container">
+        <div>
+          <div class="anyday" id="day7">
+            <p>Sunday</p>
+            <div class="btns">
+              <button class="add-btn" disabled>Add</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <h2>Created by magnificent Ivan Kožar</h2>
+    </footer>
+  </body>
+</html>

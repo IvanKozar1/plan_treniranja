@@ -1,0 +1,72 @@
+*{
+    box-sizing: border-box;
+}
+html {
+    font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: bisque;
+}
+button:focus {
+    outline: none;
+  }
+
+h1 {
+  margin: 0;
+  padding: 1rem;
+  color: blue;
+  font-size: 4rem;
+}
+
+
+
+header {
+    width: 100%;
+  text-align: center;
+  background-color: rgb(250, 209, 132);
+}
+
+#main-container {
+  margin: 2rem 22rem 2rem 22rem;
+}
+.day-container{
+  margin: 0;
+  background-color: rgb(253, 243, 231);
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+}
+
+.anyday {
+  margin: 0 0 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.btns {
+  margin-right: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+p {
+  margin-left: 2rem;
+  font-size: 1.5rem;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;  
+}
+
+h2 {
+  margin-top: 5rem;
+  position: relative;
+  bottom: 0px;
+}
+
+
+
