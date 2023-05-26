@@ -14,8 +14,21 @@
     <div id="backdrop"></div>
     <div class="modal" id="add-modal">
       <div class="modal__content">
-        <label for="title">Add an excercise</label>
-        <input type="text" name="title" id="title" />
+        <label for="excercise">Add an excercise</label>
+        <select name="excercise" id="excercise">
+          <option value="" selected disabled>Select an option</option>
+          <option value="biceps">Biceps</option>
+          <option value="triceps">Triceps</option>
+          <option value="forearm">Forearm</option>
+          <option value="shoulders">Shoulders</option>
+          <option value="chests">Chests</option>
+          <option value="abbs">Abbs</option>
+          <option value="upper_back">Upper Back</option>
+          <option value="lower_back">Lower Back</option>
+          <option value="legs">Legs</option>
+          <option value="other">Other</option>
+        </select>
+        <input type="text" id="otherInput" style="display: none;" placeholder="Enter your option" />
       </div>
       <div class="modal__actions">
         <button class="btn btn--passive">Cancel</button>
