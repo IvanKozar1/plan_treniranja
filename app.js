@@ -37,8 +37,9 @@ const toggleExcerciseModal = (event) => {
 };
 
 const clearExcerciseInput = () => {
-  userInput.value = '';
+  selectedElement.selectedIndex = 0;
   userOtherInput.value = '';
+  otherInput.style.display = 'none';
 };
 
 const cancelExcerciseHandler = () => {
@@ -54,7 +55,12 @@ const addExcerciseHandler = () => {
     const newExcercise = {
       excercise: otherExcercise,
     };
-  
+
+    if (excerciseType.trim() === '' && otherInput.style.display == 'block') {
+      alert('Enter Excercise!');
+    } else if (excerciseType.trim() === '') {
+      
+    }
     if (otherExcercise !== '' && activeDay === 'btn1') {
       excercisesDayOne.push(newExcercise.excercise);
       renderNewExcerciseElement(
@@ -159,10 +165,6 @@ const addExcerciseHandler = () => {
       );
     }
   }
-
-  /*if (excerciseType.trim() === '') {
-    alert('Enter Excercise!');
-  };*/
 
   
 
