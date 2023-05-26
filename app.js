@@ -53,6 +53,7 @@ const addExcerciseHandler = () => {
 
   if (otherInput.style.display === 'block' && otherExcercise.trim() === '') {
     alert('Enter Excercise!');
+    return;
   } else {
     if (otherExcercise.trim() !== '') {
       const newExcercise = {
