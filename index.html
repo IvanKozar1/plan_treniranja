@@ -7,33 +7,14 @@
     <title>Training plan</title>
     <link rel="stylesheet" href="/styles/add-style.css" />
     <link rel="stylesheet" href="/styles/style.css" />
+    <script src="modal-render.js" defer></script>
     <script src="dayRenderer.js" defer></script>
     <script src="app.js" defer></script>
   </head>
   <body>
     <div id="backdrop"></div>
     <div class="modal" id="add-modal">
-      <div class="modal__content">
-        <label for="excercise">Add an excercise</label>
-        <select name="excercise" id="excercise">
-          <option value="" selected disabled>Select an option</option>
-          <option value="Biceps">Biceps</option>
-          <option value="Triceps">Triceps</option>
-          <option value="Forearm">Forearm</option>
-          <option value="Shoulders">Shoulders</option>
-          <option value="Chests">Chests</option>
-          <option value="Abbs">Abbs</option>
-          <option value="Upper Back">Upper Back</option>
-          <option value="Lower Back">Lower Back</option>
-          <option value="Legs">Legs</option>
-          <option value="other">Other</option>
-        </select>
-        <input type="text" id="otherInput" style="display: none;" placeholder="Enter your option" />
-      </div>
-      <div class="modal__actions">
-        <button class="btn btn--passive">Cancel</button>
-        <button class="btn btn--success">Add</button>
-      </div>
+      
     </div>
 
     <header>

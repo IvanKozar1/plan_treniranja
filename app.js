@@ -14,10 +14,12 @@ const excercisesDaySix = [];
 
 const addExcerciseModal = document.getElementById('add-modal');
 const backdrop = document.getElementById('backdrop');
-const cancelBtn = document.querySelector('.btn--passive');
-const addBtn = document.querySelector('.btn--success');
-const userInput = document.querySelector('select');
-const userOtherInput = document.querySelector('input');
+//const cancelBtn = document.querySelector('.btn--passive');
+//const addBtn = document.querySelector('.btn--success');
+//const userInput = document.querySelector('select');
+//const userOtherInput = document.querySelector('input');
+//const selectedElement = document.getElementById('excercise');
+//const otherInput = document.getElementById('otherInput');
 //
 const entryTextDay1 = document.getElementById('day1');
 const deleteExcerciseModal = document.getElementById('delete-modal');
@@ -39,7 +41,7 @@ const toggleExcerciseModal = (event) => {
 const clearExcerciseInput = () => {
   selectedElement.selectedIndex = 0;
   userOtherInput.value = '';
-  otherInput.style.display = 'none';
+  userOtherInput.style.display = 'none';
 };
 
 const cancelExcerciseHandler = () => {
@@ -48,11 +50,12 @@ const cancelExcerciseHandler = () => {
 };
 
 const addExcerciseHandler = () => {
-  const excerciseType = userInput.value;
+  const excerciseType = selectedElement.value;
   const otherExcercise = userOtherInput.value;
+console.log(defaultOption);
 
-  if (otherInput.style.display === 'block' && otherExcercise.trim() === '') {
-    alert('Enter Excercise!');
+  if (userOtherInput.style.display === 'block' && otherExcercise.trim() === '') {
+    alert('Select or enter an excercise!');
     return;
   } else {
     if (otherExcercise.trim() !== '') {
@@ -188,14 +191,12 @@ const addingOnRightDay = () => {
 };
 
 /////////////////////////////////////////////////////
-const selectedElement = document.getElementById('excercise');
-const otherInput = document.getElementById('otherInput');
 
 function checkOption() {
-  if (selectedElement.value === 'other') {
-    otherInput.style.display = 'block';
+  if (selectedElement.value === 'Other') {
+    userOtherInput.style.display = 'block';
   } else {
-    otherInput.style.display = 'none';
+    userOtherInput.style.display = 'none';
   }
 }
 selectedElement.addEventListener('change', checkOption);
