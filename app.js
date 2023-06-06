@@ -14,13 +14,7 @@ const excercisesDaySix = [];
 
 const addExcerciseModal = document.getElementById('add-modal');
 const backdrop = document.getElementById('backdrop');
-//const cancelBtn = document.querySelector('.btn--passive');
-//const addBtn = document.querySelector('.btn--success');
-//const userInput = document.querySelector('select');
-//const userOtherInput = document.querySelector('input');
-//const selectedElement = document.getElementById('excercise');
-//const otherInput = document.getElementById('otherInput');
-//
+
 const entryTextDay1 = document.getElementById('day1');
 const deleteExcerciseModal = document.getElementById('delete-modal');
 
