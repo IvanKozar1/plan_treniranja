@@ -52,9 +52,11 @@ const cancelExcerciseHandler = () => {
 const addExcerciseHandler = () => {
   const excerciseType = selectedElement.value;
   const otherExcercise = userOtherInput.value;
-console.log(defaultOption);
 
-  if (userOtherInput.style.display === 'block' && otherExcercise.trim() === '') {
+  if (
+    userOtherInput.style.display === 'block' &&
+    otherExcercise.trim() === ''
+  ) {
     alert('Select or enter an excercise!');
     return;
   } else {

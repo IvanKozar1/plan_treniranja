@@ -57,5 +57,3 @@ listDiv.append(selectedElement);
 listDiv.append(userOtherInput);
 buttonDiv.append(cancelBtn);
 buttonDiv.append(addBtn);
-
-
