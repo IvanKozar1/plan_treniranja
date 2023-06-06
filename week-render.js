@@ -31,13 +31,6 @@ for (const day of days) {
     addButton.innerHTML = 'Add';
     unOrderedList.id = `excercise-list${i}`;
 
-    mainWeekDiv.appendChild(div1);
-    div1.append(div2);
-    div2.append(div3);
-    div3.append(paragraph);
-    div3.append(div4);
-    div4.append(addButton);
-    div1.append(unOrderedList);
   } else {
     div1.className = 'day-container';
     div3.className = 'anyday';
@@ -47,14 +40,15 @@ for (const day of days) {
     addButton.className = 'add-btn';
     addButton.disabled = 'true';
     addButton.innerHTML = 'Add';
+  }
 
-    mainWeekDiv.appendChild(div1);
+  i++;
+
+  mainWeekDiv.appendChild(div1);
     div1.append(div2);
     div2.append(div3);
     div3.append(paragraph);
     div3.append(div4);
     div4.append(addButton);
-  }
-
-  i++;
+    div1.append(unOrderedList);
 }
